@@ -276,7 +276,7 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
                     name,
                     style: widget.countryTextStyle ?? textTheme.labelLarge,
                   ),
-                  subtitle: CcpDefaultListItemTrailing(
+                  trailing: CcpDefaultListItemTrailing(
                     code: code,
                     icon: widget.favoritesIcon,
                     favorites: widget.favorites,
@@ -291,7 +291,7 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
                     name,
                     style: widget.countryTextStyle ?? textTheme.labelLarge,
                   ),
-                  subtitle: CcpDefaultListItemTrailing(
+                  trailing: CcpDefaultListItemTrailing(
                     code: code,
                     icon: widget.favoritesIcon,
                     favorites: widget.favorites,
