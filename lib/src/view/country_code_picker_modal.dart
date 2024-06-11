@@ -157,6 +157,7 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: CustomScrollView(
         slivers: [
           if (widget.title != null)
@@ -169,9 +170,9 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
             )
           else
             SliverAppBar(
+              automaticallyImplyLeading: false,
               backgroundColor: widget.defaultAppbarBackgroundColor,
               foregroundColor: widget.defaultAppbarForegroundColor,
-              surfaceTintColor: Colors.white,
               // surfaceTintColor: Colors.transparent,
               expandedHeight: 114,
               pinned: true,
