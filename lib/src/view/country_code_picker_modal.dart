@@ -171,26 +171,8 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
             SliverAppBar(
               backgroundColor: widget.defaultAppbarBackgroundColor,
               foregroundColor: widget.defaultAppbarForegroundColor,
-              surfaceTintColor: Colors.transparent,
-              leading: Container(
-                margin: const EdgeInsets.only(left: 16, top: 11, bottom: 11),
-                decoration: BoxDecoration(
-                  color: widget.defaultAppbarCloseIconBackgroundColor,
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: IconButton(
-                    icon: Icon(
-                      widget.defaultAppbarCloseIcon,
-                      color: widget.defaultAppbarForegroundColor,
-                      size: 18,
-                    ),
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                  ),
-                ),
-              ),
+              surfaceTintColor: Colors.white,
+              // surfaceTintColor: Colors.transparent,
               expandedHeight: 114,
               pinned: true,
               flexibleSpace: LayoutBuilder(
