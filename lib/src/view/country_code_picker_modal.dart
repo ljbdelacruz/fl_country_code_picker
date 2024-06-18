@@ -21,7 +21,7 @@ class CountryCodePickerModal extends StatefulWidget {
     required this.showSearchBar,
     required this.showDialCode,
     this.title,
-    this.defaultAppbarBackgroundColor = Colors.white,
+    this.defaultAppbarBackgroundColor = const Color(0xffEDF2F4),
     this.defaultAppbarForegroundColor = Colors.black,
     this.defaultAppbarCloseIconBackgroundColor =
         const Color.fromARGB(255, 224, 224, 224),
@@ -157,7 +157,7 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xffEDF2F4),
       body: CustomScrollView(
         slivers: [
           if (widget.title != null)
